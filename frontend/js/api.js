@@ -1,11 +1,6 @@
 const API = {
-    // Base URL pour les appels API
     baseURL: '/api',
     
-    /**
-     * Récupère tous les produits
-     * @returns {Promise<Array>} Liste des produits
-     */
     getProducts: async function() {
         try {
             const response = await fetch(`${this.baseURL}/products`);
@@ -19,11 +14,6 @@ const API = {
         }
     },
     
-    /**
-     * Récupère un produit par son ID
-     * @param {string} id - ID du produit
-     * @returns {Promise<Object|null>} - Détails du produit ou null si non trouvé
-     */
     getProductById: async function(id) {
         try {
             const response = await fetch(`${this.baseURL}/products/${id}`);
@@ -37,12 +27,6 @@ const API = {
         }
     },
     
-    /**
-     * Met à jour le stock d'un produit après achat
-     * @param {string} id - ID du produit
-     * @param {number} quantity - Quantité achetée
-     * @returns {Promise<{success: boolean, newStock: number}>} Résultat de l'opération
-     */
     updateProductStock: async function(id, quantity) {
         try {
             const response = await fetch(`${this.baseURL}/products/${id}/stock`, {
@@ -65,11 +49,6 @@ const API = {
         }
     },
     
-    /**
-     * Recherche des adresses basées sur une requête
-     * @param {string} query - Texte de recherche
-     * @returns {Promise<Array>} - Liste des adresses correspondantes
-     */
     searchAddresses: async function(query) {
         try {
             if (!query || query.length < 3) {

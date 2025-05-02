@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Détails du produit - BrawlPlush</title>
-    <link rel="stylesheet" href="/frontend/css/style.css">
-    <link rel="stylesheet" href="/frontend/css/responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -33,6 +33,26 @@
                 <div class="loading">Chargement du produit...</div>
             </div>
             
+            <div class="product-detail-info">
+                <!-- Description du produit -->
+                <h2>Nom du Produit : Peluche Spike</h2>
+                <img src="/path/to/product-image.jpg" alt="Peluche Spike">
+                <p>Prix : 20€</p>
+
+                <!-- Description tronquée -->
+                <p id="product-short-description">
+                    Adoptez cette adorable peluche Spike, le cactus légendaire de Brawl Stars ! Avec son design unique et son sourire signature, Spike est l'un des pers...
+                </p>
+                
+                <!-- Bouton pour afficher la description complète -->
+                <button onclick="toggleFullDescription()">Afficher plus</button>
+
+                <!-- Description complète cachée -->
+                <p id="product-full-description" style="display: none;">
+                    Adoptez cette adorable peluche Spike, le cactus légendaire de Brawl Stars ! Avec son design unique et son sourire signature, Spike est l'un des personnages les plus aimés du jeu. Notre peluche reproduit fidèlement ses couleurs vives et ses détails distinctifs, tout en offrant une texture douce qui contraste avec son apparence épineuse dans le jeu. Cette peluche est parfaite pour les collectionneurs et les fans de tous âges, et sera un ajout remarquable à votre collection Brawl Stars.
+                </p>
+            </div>
+
             <div class="similar-products">
                 <h3>Produits similaires</h3>
                 <div class="similar-products-grid" id="similar-products-container">
@@ -66,8 +86,19 @@
             <p>&copy; 2025 BrawlPlush - Projet Challenge JS</p>
         </div>
     </footer>
-
+    
     <script src="/js/api.js"></script>
     <script src="/js/product.js"></script>
+
+    <script>
+        function toggleFullDescription() {
+            const fullDescription = document.getElementById("product-full-description");
+            if (fullDescription.style.display === "none") {
+                fullDescription.style.display = "block";
+            } else {
+                fullDescription.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

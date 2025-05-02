@@ -1,150 +1,565 @@
 [
-    {
-      "id": "shelly-001",
-      "name": "Peluche Shelly",
-      "description": "Cette adorable peluche Shelly est parfaite pour tous les fans de Brawl Stars ! Fabriquée avec des matériaux premium et des détails fidèles au personnage, cette peluche est idéale pour jouer ou pour décorer votre collection. Avec ses couleurs vives et sa texture douce, elle est conçue pour résister à des heures de jeu tout en gardant son aspect original. Chaque peluche est minutieusement inspectée pour garantir la meilleure qualité possible. Collectionnez tous vos personnages préférés de Brawl Stars !",
-      "stock": 25,
-      "price": 24.99,
-      "reduction": 0,
-      "currency": "EUR",
-      "images": [
-        "/images/shelly-1.jpg",
-        "/images/shelly-2.jpg",
-        "/images/shelly-3.jpg"
+  {
+    "id": "shelly-001",
+    "name": "Peluche Shelly",
+    "description": "Cette adorable peluche Shelly est parfaite pour tous les fans de Brawl Stars ! Fabriquée avec des matériaux premium et des détails fidèles au personnage, cette peluche est idéale pour jouer ou pour décorer votre collection. Avec ses couleurs vives et sa texture douce, elle est conçue pour résister à des heures de jeu tout en gardant son aspect original. Chaque peluche est minutieusement inspectée pour garantir la meilleure qualité possible. Collectionnez tous vos personnages préférés de Brawl Stars !",
+    "stock": 25,
+    "price": 24.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/shelly-1.jpg",
+      "/images/shelly-2.jpg",
+      "/images/shelly-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Shelly",
+      "rarity": "Démarrage",
+      "colors": [
+        "Bleu",
+        "Violet",
+        "Blanc"
       ],
-      "characteristics": {
-        "character": "Shelly",
-        "rarity": "Démarrage",
-        "colors": ["Bleu", "Violet", "Blanc"],
-        "size": ["S", "M", "L"],
-        "material": "Coton et polyester"
-      }
-    },
-    {
-      "id": "colt-002",
-      "name": "Peluche Colt",
-      "description": "Découvrez notre magnifique peluche Colt, le tireur d'élite de Brawl Stars ! Cette peluche de haute qualité capture parfaitement l'essence du personnage avec son sourire confiant et son style unique. Fabriquée avec des matériaux doux au toucher et des détails soignés, cette peluche Colt mesure 30 cm de hauteur et constitue un compagnon idéal pour tous les fans de Brawl Stars. Son design est fidèle au jeu, avec ses cheveux rouges caractéristiques et sa tenue reconnaissable.",
-      "stock": 18,
-      "price": 29.99,
-      "reduction": 15,
-      "currency": "EUR",
-      "images": [
-        "/images/colt-1.jpg",
-        "/images/colt-2.jpg",
-        "/images/colt-3.jpg"
+      "size": [
+        "S",
+        "M",
+        "L"
       ],
-      "characteristics": {
-        "character": "Colt",
-        "rarity": "Trophée Chemin",
-        "colors": ["Rouge", "Bleu", "Marron"],
-        "size": ["S", "M", "L"],
-        "material": "Peluche premium et feutre"
-      }
-    },
-    {
-      "id": "spike-003",
-      "name": "Peluche Spike",
-      "description": "Adoptez cette adorable peluche Spike, le cactus légendaire de Brawl Stars ! Avec son design unique et son sourire signature, Spike est l'un des personnages les plus aimés du jeu. Notre peluche reproduit fidèlement ses couleurs vives et ses détails distinctifs, tout en offrant une texture douce qui contraste avec son apparence épineuse dans le jeu. Cette peluche est parfaite pour les collectionneurs et les fans de tous âges, et sera un ajout remarquable à votre collection Brawl Stars.",
-      "stock": 10,
-      "price": 34.99,
-      "reduction": 0,
-      "currency": "EUR",
-      "images": [
-        "/images/spike-1.jpg",
-        "/images/spike-2.jpg",
-        "/images/spike-3.jpg"
-      ],
-      "characteristics": {
-        "character": "Spike",
-        "rarity": "Légendaire",
-        "colors": ["Vert", "Rose", "Jaune"],
-        "size": ["S", "M", "L"],
-        "material": "Polyester hypoallergénique"
-      }
-    },
-    {
-      "id": "nita-004",
-      "name": "Peluche Nita",
-      "description": "Retrouvez toute la douceur et la force de Nita dans cette peluche irrésistible ! Avec ses couleurs intenses et ses détails inspirés du jeu, cette peluche est aussi robuste que mignonne. Idéale pour petits et grands collectionneurs.",
-      "stock": 12,
-      "price": 27.99,
-      "reduction": 10,
-      "currency": "EUR",
-      "images": [
-        "/images/nita-1.jpg",
-        "/images/nita-2.jpg",
-        "/images/nita-3.jpg"
-      ],
-      "characteristics": {
-        "character": "Nita",
-        "rarity": "Trophée Chemin",
-        "colors": ["Rouge", "Brun", "Beige"],
-        "size": ["S", "M"],
-        "material": "Coton naturel"
-      }
-    },
-    {
-      "id": "leon-005",
-      "name": "Peluche Leon",
-      "description": "Incarnez le ninja furtif avec cette peluche Leon ultra douce ! Fidèle au personnage de Brawl Stars, elle arbore son emblématique capuche de lézard et une finition de qualité supérieure. Un incontournable pour les fans !",
-      "stock": 15,
-      "price": 39.99,
-      "reduction": 5,
-      "currency": "EUR",
-      "images": [
-        "/images/leon-1.jpg",
-        "/images/leon-2.jpg",
-        "/images/leon-3.jpg"
-      ],
-      "characteristics": {
-        "character": "Leon",
-        "rarity": "Légendaire",
-        "colors": ["Vert", "Jaune", "Bleu"],
-        "size": ["M", "L"],
-        "material": "Peluche ultra-douce"
-      }
-    },
-    {
-      "id": "crow-006",
-      "name": "Peluche Crow",
-      "description": "Découvrez la peluche Crow, le mystérieux corbeau de Brawl Stars ! Avec son allure intimidante mais adorable en peluche, Crow est parfait pour tous les stratèges du jeu.",
-      "stock": 8,
-      "price": 44.99,
-      "reduction": 0,
-      "currency": "EUR",
-      "images": [
-        "/images/crow-1.jpg",
-        "/images/crow-2.jpg",
-        "/images/crow-3.jpg"
-      ],
-      "characteristics": {
-        "character": "Crow",
-        "rarity": "Légendaire",
-        "colors": ["Noir", "Gris", "Bleu"],
-        "size": ["M", "L"],
-        "material": "Peluche et microfibre"
-      }
-    },
-    {
-      "id": "elprimo-007",
-      "name": "Peluche El Primo",
-      "description": "Le catcheur préféré de Brawl Stars débarque en peluche ! Avec son masque bleu et son costume coloré, El Primo est prêt pour les câlins comme pour les combats.",
-      "stock": 30,
-      "price": 32.99,
-      "reduction": 0,
-      "currency": "EUR",
-      "images": [
-        "/images/elprimo-1.jpg",
-        "/images/elprimo-2.jpg",
-        "/images/elprimo-3.jpg"
-      ],
-      "characteristics": {
-        "character": "El Primo",
-        "rarity": "Rare",
-        "colors": ["Bleu", "Rouge", "Jaune"],
-        "size": ["S", "M", "L"],
-        "material": "Microfibre résistante"
-      }
+      "material": "Coton et polyester"
     }
+  },
+  {
+    "id": "colt-002",
+    "name": "Peluche Colt",
+    "description": "Découvrez notre magnifique peluche Colt, le tireur d'élite de Brawl Stars ! Cette peluche de haute qualité capture parfaitement l'essence du personnage avec son sourire confiant et son style unique. Fabriquée avec des matériaux doux au toucher et des détails soignés, cette peluche Colt mesure 30 cm de hauteur et constitue un compagnon idéal pour tous les fans de Brawl Stars. Son design est fidèle au jeu, avec ses cheveux rouges caractéristiques et sa tenue reconnaissable.",
+    "stock": 0,
+    "price": 29.99,
+    "reduction": 15,
+    "currency": "EUR",
+    "images": [
+      "/images/colt-1.jpg",
+      "/images/colt-2.jpg",
+      "/images/colt-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Colt",
+      "rarity": "Trophée Chemin",
+      "colors": [
+        "Rouge",
+        "Bleu",
+        "Marron"
+      ],
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "material": "Peluche premium et feutre"
+    }
+  },
+  {
+    "id": "spike-003",
+    "name": "Peluche Spike",
+    "description": "Adoptez cette adorable peluche Spike, le cactus légendaire de Brawl Stars ! Avec son design unique et son sourire signature, Spike est l'un des personnages les plus aimés du jeu. Notre peluche reproduit fidèlement ses couleurs vives et ses détails distinctifs, tout en offrant une texture douce qui contraste avec son apparence épineuse dans le jeu. Cette peluche est parfaite pour les collectionneurs et les fans de tous âges, et sera un ajout remarquable à votre collection Brawl Stars.",
+    "stock": 9,
+    "price": 34.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/spike-1.jpg",
+      "/images/spike-2.jpg",
+      "/images/spike-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Spike",
+      "rarity": "Légendaire",
+      "colors": [
+        "Vert",
+        "Rose",
+        "Jaune"
+      ],
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "material": "Polyester hypoallergénique"
+    }
+  },
+  {
+    "id": "nita-004",
+    "name": "Peluche Nita",
+    "description": "Retrouvez toute la douceur et la force de Nita dans cette peluche irrésistible ! Avec ses couleurs intenses et ses détails inspirés du jeu, cette peluche est aussi robuste que mignonne. Idéale pour petits et grands collectionneurs.",
+    "stock": 7,
+    "price": 27.99,
+    "reduction": 10,
+    "currency": "EUR",
+    "images": [
+      "/images/nita-1.jpg",
+      "/images/nita-2.jpg",
+      "/images/nita-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Nita",
+      "rarity": "Trophée Chemin",
+      "colors": [
+        "Rouge",
+        "Brun",
+        "Beige"
+      ],
+      "size": [
+        "S",
+        "M"
+      ],
+      "material": "Coton naturel"
+    }
+  },
+  {
+    "id": "leon-005",
+    "name": "Peluche Leon",
+    "description": "Incarnez le ninja furtif avec cette peluche Leon ultra douce ! Fidèle au personnage de Brawl Stars, elle arbore son emblématique capuche de lézard et une finition de qualité supérieure. Un incontournable pour les fans !",
+    "stock": 15,
+    "price": 39.99,
+    "reduction": 5,
+    "currency": "EUR",
+    "images": [
+      "/images/leon-1.jpg",
+      "/images/leon-2.jpg",
+      "/images/leon-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Leon",
+      "rarity": "Légendaire",
+      "colors": [
+        "Vert",
+        "Jaune",
+        "Bleu"
+      ],
+      "size": [
+        "M",
+        "L"
+      ],
+      "material": "Peluche ultra-douce"
+    }
+  },
+  {
+    "id": "crow-006",
+    "name": "Peluche Crow",
+    "description": "Découvrez la peluche Crow, le mystérieux corbeau de Brawl Stars ! Avec son allure intimidante mais adorable en peluche, Crow est parfait pour tous les stratèges du jeu.",
+    "stock": 8,
+    "price": 44.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/crow-1.jpg",
+      "/images/crow-2.jpg",
+      "/images/crow-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Crow",
+      "rarity": "Légendaire",
+      "colors": [
+        "Noir",
+        "Gris",
+        "Bleu"
+      ],
+      "size": [
+        "M",
+        "L"
+      ],
+      "material": "Peluche et microfibre"
+    }
+  },
+  {
+    "id": "elprimo-007",
+    "name": "Peluche El Primo",
+    "description": "Le catcheur préféré de Brawl Stars débarque en peluche ! Avec son masque bleu et son costume coloré, El Primo est prêt pour les câlins comme pour les combats.",
+    "stock": 30,
+    "price": 32.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/elprimo-1.jpg",
+      "/images/elprimo-2.jpg",
+      "/images/elprimo-3.jpg"
+    ],
+    "characteristics": {
+      "character": "El Primo",
+      "rarity": "Rare",
+      "colors": [
+        "Bleu",
+        "Rouge",
+        "Jaune"
+      ],
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "material": "Microfibre résistante"
+    }
+  },
+  {
+    "id": "ricochet-008",
+    "name": "Peluche Ricochet",
+    "description": "Cette peluche Ricochet capture le style unique et dynamique du personnage de Brawl Stars. Avec ses couleurs vives et son design futuriste, Ricochet sera un excellent ajout à votre collection.",
+    "stock": 10,
+    "price": 28.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/ricochet-1.jpg",
+      "/images/ricochet-2.jpg",
+      "/images/ricochet-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Ricochet",
+      "rarity": "Épique",
+      "colors": [
+        "Jaune",
+        "Bleu",
+        "Noir"
+      ],
+      "size": [
+        "M"
+      ],
+      "material": "Polyester et coton"
+    }
+  },
+  {
+    "id": "barley-009",
+    "name": "Peluche Barley",
+    "description": "Cette peluche Barley avec ses fioles empoisonnées et son design particulier, sera parfaite pour tout fan de Brawl Stars.",
+    "stock": 6,
+    "price": 25.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/barley-1.jpg",
+      "/images/barley-2.jpg",
+      "/images/barley-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Barley",
+      "rarity": "Épique",
+      "colors": [
+        "Vert",
+        "Jaune",
+        "Brun"
+      ],
+      "size": [
+        "S",
+        "M"
+      ],
+      "material": "Coton et polyester"
+    }
+  },
+  {
+    "id": "piper-010",
+    "name": "Peluche Piper",
+    "description": "Piper, la magnifique et élégante tireuse d'élite de Brawl Stars, est disponible en peluche avec son look distingué et son style raffiné.",
+    "stock": 15,
+    "price": 29.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/piper-1.jpg",
+      "/images/piper-2.jpg",
+      "/images/piper-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Piper",
+      "rarity": "Épique",
+      "colors": [
+        "Blanc",
+        "Rose",
+        "Bleu"
+      ],
+      "size": [
+        "M",
+        "L"
+      ],
+      "material": "Polyester"
+    }
+  },
+  {
+    "id": "daryl-011",
+    "name": "Peluche Daryl",
+    "description": "Avec son look unique et son apparence de robot armé, Daryl est une peluche incontournable pour les fans de Brawl Stars.",
+    "stock": 12,
+    "price": 34.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/daryl-1.jpg",
+      "/images/daryl-2.jpg",
+      "/images/daryl-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Daryl",
+      "rarity": "Légendaire",
+      "colors": [
+        "Vert",
+        "Jaune",
+        "Gris"
+      ],
+      "size": [
+        "M"
+      ],
+      "material": "Polyester et microfibre"
+    }
+  },
+  {
+    "id": "bibi-012",
+    "name": "Peluche Bibi",
+    "description": "La peluche Bibi est prête à affronter n'importe quel défi ! Avec son look de sportive et ses accessoires colorés, elle est parfaite pour tous les fans.",
+    "stock": 9,
+    "price": 33.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/bibi-1.jpg",
+      "/images/bibi-2.jpg",
+      "/images/bibi-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Bibi",
+      "rarity": "Légendaire",
+      "colors": [
+        "Violet",
+        "Bleu",
+        "Blanc"
+      ],
+      "size": [
+        "S",
+        "M"
+      ],
+      "material": "Coton et polyester"
+    }
+  },
+  {
+    "id": "max-013",
+    "name": "Peluche Max",
+    "description": "Découvrez Max, le personnage rapide de Brawl Stars, maintenant en peluche avec ses couleurs vives et son design inspiré du jeu.",
+    "stock": 20,
+    "price": 35.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/max-1.jpg",
+      "/images/max-2.jpg",
+      "/images/max-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Max",
+      "rarity": "Légendaire",
+      "colors": [
+        "Bleu",
+        "Violet",
+        "Jaune"
+      ],
+      "size": [
+        "M",
+        "L"
+      ],
+      "material": "Coton et microfibre"
+    }
+  },
+  {
+    "id": "jessie-014",
+    "name": "Peluche Jessie",
+    "description": "Cette adorable peluche Jessie avec son tourelle Scrappy est parfaite pour les fans de cette ingénieuse créatrice ! Fabriquée avec des détails fidèles au personnage, cette peluche est un incontournable pour votre collection Brawl Stars.",
+    "stock": 18,
+    "price": 26.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/jessie-1.jpg",
+      "/images/jessie-2.jpg",
+      "/images/jessie-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Jessie",
+      "rarity": "Trophée Chemin",
+      "colors": [
+        "Rouge",
+        "Marron",
+        "Jaune"
+      ],
+      "size": [
+        "S",
+        "M"
+      ],
+      "material": "Coton et polyester"
+    }
+  },
+  {
+    "id": "brock-015",
+    "name": "Peluche Brock",
+    "description": "La peluche Brock, le spécialiste des roquettes de Brawl Stars, est maintenant disponible ! Avec son style cool et ses accessoires détaillés, cette peluche fera sensation dans votre collection.",
+    "stock": 14,
+    "price": 27.99,
+    "reduction": 10,
+    "currency": "EUR",
+    "images": [
+      "/images/brock-1.jpg",
+      "/images/brock-2.jpg",
+      "/images/brock-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Brock",
+      "rarity": "Trophée Chemin",
+      "colors": [
+        "Rouge",
+        "Jaune",
+        "Blanc"
+      ],
+      "size": [
+        "M",
+        "L"
+      ],
+      "material": "Microfibre et polyester"
+    }
+  },
+  {
+    "id": "mortis-016",
+    "name": "Peluche Mortis",
+    "description": "La mystérieuse peluche Mortis avec sa pelle caractéristique et son chapeau élégant est enfin disponible ! Cette peluche haut de gamme capture parfaitement l'essence de ce personnage emblématique de Brawl Stars.",
+    "stock": 7,
+    "price": 37.99,
+    "reduction": 5,
+    "currency": "EUR",
+    "images": [
+      "/images/mortis-1.jpg",
+      "/images/mortis-2.jpg",
+      "/images/mortis-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Mortis",
+      "rarity": "Mythique",
+      "colors": [
+        "Violet",
+        "Noir",
+        "Rouge"
+      ],
+      "size": [
+        "M",
+        "L"
+      ],
+      "material": "Velours et polyester"
+    }
+  },
+  {
+    "id": "tara-017",
+    "name": "Peluche Tara",
+    "description": "La mystérieuse Tara est maintenant disponible en peluche ! Avec son look énigmatique et ses cartes magiques, cette peluche détaillée est parfaite pour les amateurs de personnages mystiques de Brawl Stars.",
+    "stock": 11,
+    "price": 38.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/tara-1.jpg",
+      "/images/tara-2.jpg",
+      "/images/tara-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Tara",
+      "rarity": "Mythique",
+      "colors": [
+        "Violet",
+        "Rose",
+        "Noir"
+      ],
+      "size": [
+        "S",
+        "M"
+      ],
+      "material": "Coton et polyester premium"
+    }
+  },
+  {
+    "id": "sandy-018",
+    "name": "Peluche Sandy",
+    "description": "Le somnolent Sandy est maintenant disponible en peluche ultra-douce ! Ce personnage légendaire de Brawl Stars avec son oreiller et son sable magique est parfait pour décorer votre lit ou accompagner vos siestes.",
+    "stock": 16,
+    "price": 36.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/sandy-1.jpg",
+      "/images/sandy-2.jpg",
+      "/images/sandy-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Sandy",
+      "rarity": "Légendaire",
+      "colors": [
+        "Bleu",
+        "Blanc",
+        "Jaune"
+      ],
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "material": "Microfibre ultra-douce"
+    }
+  },
+  {
+    "id": "bo-019",
+    "name": "Peluche Bo",
+    "description": "La majestueuse peluche Bo, l'éclaireur spirituel de Brawl Stars, est maintenant disponible ! Avec son arc, ses flèches et son masque d'aigle distinctif, cette peluche est un symbole de sagesse pour votre collection.",
+    "stock": 13,
+    "price": 31.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/bo-1.jpg",
+      "/images/bo-2.jpg",
+      "/images/bo-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Bo",
+      "rarity": "Épique",
+      "colors": [
+        "Jaune",
+        "Marron",
+        "Blanc"
+      ],
+      "size": [
+        "M",
+        "L"
+      ],
+      "material": "Coton naturel et feutre"
+    }
+  },
+  {
+    "id": "emz-020",
+    "name": "Peluche Emz",
+    "description": "L'influenceuse zombie Emz est maintenant disponible en peluche ! Avec son téléphone pour selfies et sa bombe de laque toxique, cette peluche tendance est un must-have pour tous les fans de Brawl Stars qui suivent les dernières modes.",
+    "stock": 14,
+    "price": 30.99,
+    "reduction": 0,
+    "currency": "EUR",
+    "images": [
+      "/images/emz-1.jpg",
+      "/images/emz-2.jpg",
+      "/images/emz-3.jpg"
+    ],
+    "characteristics": {
+      "character": "Emz",
+      "rarity": "Trophée Chemin",
+      "colors": [
+        "Violet",
+        "Vert",
+        "Gris"
+      ],
+      "size": [
+        "S",
+        "M"
+      ],
+      "material": "Polyester et tissu texturé"
+    }
+  }
 ]
-  

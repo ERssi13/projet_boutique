@@ -1,4 +1,4 @@
-/* Tablette (max-width: 992px) */
+
 @media (max-width: 992px) {
     .hero {
         height: 300px;
@@ -30,7 +30,6 @@
     }
 }
 
-/* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -82,7 +81,7 @@
     }
 }
 
-/* Petits mobiles (max-width: 480px) */
+
 @media (max-width: 480px) {
     .hero {
         height: 200px;

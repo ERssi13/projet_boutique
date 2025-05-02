@@ -1,0 +1,29 @@
+{
+    "name": "boutique-brawlstars-peluches",
+    "version": "1.0.0",
+    "description": "Site de vente de peluches inspirées de Brawl Stars",
+    "main": "backend/server.js",
+    "scripts": {
+      "start": "node backend/server.js",
+      "dev": "nodemon backend/server.js"
+    },
+    "keywords": [
+      "brawlstars",
+      "peluches",
+      "ecommerce",
+      "express"
+    ],
+    "author": "Auteur inconnu",
+    "license": "MIT",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.18.3"
+    },
+    "devDependencies": {
+      "nodemon": "^3.0.2"
+    },
+    "engines": {
+      "node": ">=20"
+    }
+  }
+  

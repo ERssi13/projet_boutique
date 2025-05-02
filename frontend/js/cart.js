@@ -1,8 +1,5 @@
-/**
- * Panier - Module pour gérer le panier d'achat
- */
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Éléments DOM
     const cartContainer = document.getElementById('cart-container');
     const cartEmptyElement = document.getElementById('cart-empty');
     const cartContentElement = document.getElementById('cart-content');
@@ -18,34 +15,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const cartCountElement = document.getElementById('cart-count');
     const orderConfirmationModal = document.getElementById('order-confirmation');
     
-    // Variables d'état
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let products = {};
     let selectedAddress = localStorage.getItem('savedAddress') || null;
     
-    /**
-     * Initialise la page panier
-     */
+
     async function initCartPage() {
         try {
-            // Charger les données des produits
             const productsData = await API.getProducts();
-            
-            // Convertir le tableau en objet pour un accès plus rapide
+
             productsData.forEach(product => {
                 products[product.id] = product;
             });
             
-            // Afficher le panier
             renderCart();
             
-            // Mettre à jour le compteur du panier
             updateCartCount();
             
-            // Ajouter les écouteurs d'événements
             addCartEventListeners();
             
-            // Vérifier si une adresse est sauvegardée
             if (selectedAddress) {
                 selectedAddressElement.textContent = selectedAddress;
                 selectedAddressElement.style.display = 'block';
@@ -62,20 +50,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    /**
-     * Ajoute les écouteurs d'événements
-     */
+
     function addCartEventListeners() {
-        // Recherche d'adresse
+
         addressSearchInput.addEventListener('input', debounce(searchAddress, 300));
         
-        // Sauvegarder l'adresse
+
         saveAddressCheckbox.addEventListener('change', toggleSaveAddress);
-        
-        // Bouton de paiement
+
         checkoutBtn.addEventListener('click', processCheckout);
-        
-        // Fermer la modal de confirmation
+
         document.querySelector('.close').addEventListener('click', () => {
             orderConfirmationModal.style.display = 'none';
         });
@@ -86,9 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    /**
-     * Affiche le panier
-     */
     function renderCart() {
         if (cart.length === 0) {
             cartEmptyElement.style.display = 'block';
@@ -142,13 +123,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         cartItemsElement.innerHTML = cartItemsHtml;
         
-        // Mettre à jour le récapitulatif
         const total = subtotal - totalDiscount;
         subtotalElement.textContent = `${subtotal.toFixed(2)} €`;
         discountElement.textContent = `- ${totalDiscount.toFixed(2)} €`;
         totalElement.textContent = `${total.toFixed(2)} €`;
-        
-        // Ajouter les écouteurs pour les boutons de quantité et suppression
         document.querySelectorAll('.cart-item-quantity-btn.decrease').forEach(btn => {
             btn.addEventListener('click', decreaseQuantity);
         });
@@ -166,10 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    /**
-     * Diminue la quantité d'un article du panier
-     * @param {Event} event - Événement de clic
-     */
     function decreaseQuantity(event) {
         const index = parseInt(event.currentTarget.dataset.index);
         
@@ -181,15 +155,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    /**
-     * Augmente la quantité d'un article du panier
-     * @param {Event} event - Événement de clic
-     */
+
     function increaseQuantity(event) {
         const index = parseInt(event.currentTarget.dataset.index);
         const productId = cart[index].id;
         
-        // Vérifier le stock disponible
         if (products[productId] && cart[index].quantity < products[productId].stock) {
             cart[index].quantity++;
             saveCart();
@@ -200,10 +170,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    /**
-     * Met à jour la quantité d'un article du panier
-     * @param {Event} event - Événement de changement
-     */
     function updateCartItemQuantity(event) {
         const index = parseInt(event.currentTarget.dataset.index);
         let newQuantity = parseInt(event.currentTarget.value);
@@ -222,10 +188,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCartCount();
     }
     
-    /**
-     * Supprime un article du panier
-     * @param {Event} event - Événement de clic
-     */
     function removeCartItem(event) {
         const index = parseInt(event.currentTarget.dataset.index);
         
@@ -237,9 +199,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    /**
-     * Recherche une adresse via l'API
-     */
     async function searchAddress() {
         const query = addressSearchInput.value.trim();
         
@@ -268,8 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             addressSuggestionsElement.innerHTML = suggestionsHtml;
             addressSuggestionsElement.style.display = 'block';
-            
-            // Ajouter des écouteurs d'événements aux suggestions
+        
             document.querySelectorAll('.address-suggestion').forEach(suggestion => {
                 suggestion.addEventListener('click', selectAddress);
             });
@@ -278,10 +236,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    /**
-     * Sélectionne une adresse depuis les suggestions
-     * @param {Event} event - Événement de clic
-     */
     function selectAddress(event) {
         const address = event.currentTarget.dataset.address;
         
@@ -296,9 +250,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    /**
-     * Gère la sauvegarde de l'adresse
-     */
     function toggleSaveAddress() {
         if (saveAddressCheckbox.checked && selectedAddress) {
             localStorage.setItem('savedAddress', selectedAddress);
@@ -307,9 +258,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    /**
-     * Traite la commande
-     */
     async function processCheckout() {
         if (cart.length === 0) {
             alert('Votre panier est vide');
@@ -322,17 +270,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         try {
-            // Mettre à jour les stocks
             for (const item of cart) {
                 await API.updateProductStock(item.id, item.quantity);
             }
             
-            // Vider le panier
             cart = [];
             saveCart();
             updateCartCount();
             
-            // Afficher la confirmation
             orderConfirmationModal.style.display = 'flex';
         } catch (error) {
             console.error('Erreur lors du paiement:', error);
@@ -340,27 +285,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    /**
-     * Sauvegarde le panier dans le localStorage
-     */
     function saveCart() {
         localStorage.setItem('cart', JSON.stringify(cart));
     }
     
-    /**
-     * Met à jour le compteur du panier
-     */
+
     function updateCartCount() {
         const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
         cartCountElement.textContent = totalItems;
     }
     
-    /**
-     * Fonction de debounce pour limiter les appels fréquents
-     * @param {Function} func - Fonction à appeler
-     * @param {number} delay - Délai en millisecondes
-     * @returns {Function} - Fonction avec debounce
-     */
     function debounce(func, delay) {
         let timeout;
         return function() {
@@ -371,6 +305,5 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
     
-    // Initialiser la page panier au chargement
     initCartPage();
 });
